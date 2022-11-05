@@ -1,4 +1,4 @@
-alert("Hello, prototipes!");
+alert("Hello, prototypes!");
 
 function Dog(name, breed, weight) {
     this.name = name;
@@ -119,7 +119,7 @@ Game.prototype.play = function () {
     this.level++;
     //console.log("Welcome to level " + this.level)
     this.unlock();
-}
+};
 
 Game.prototype.unlock = function () {
     if (this.level === 42) {
@@ -127,7 +127,7 @@ Game.prototype.unlock = function () {
             console.log(this.name + " is blasting you with laser beams.");
         }
     }
-}
+};
 
 let game = new Game();
 
@@ -146,3 +146,16 @@ robby.reportError();
 
 console.log(robby.hasOwnProperty("errorMessage"));
 console.log(rosie.hasOwnProperty("errorMessage"));
+
+Dog.prototype.stack = function () {
+
+};
+Dog.prototype.gait = function (string) {
+
+};
+Dog.prototype.bait = function () {
+
+};
+Dog.prototype.groom = function () {
+
+};
